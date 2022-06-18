@@ -1,0 +1,152 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+/* background-color:#4b5563; */
+background-color: #1f2937;
+}
+.navbar {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px;
+  font-family: 'Fascinate Inline', cursive;
+}
+.navbar h2{
+  color:#0f766e;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  flex-wrap: wrap;
+  padding:0;
+  font-family: 'Mali', cursive;
+}
+@media screen and (max-width: 599px) {
+  ul {
+    width: 100%;
+    margin:auto;
+  }
+}
+li{
+  list-style: none;
+  font-weight:bold;
+  padding:10px;
+  margin:5px 0px;
+  border:1px solid #0f766e;
+  border-radius:10px;
+  color:#0f766e;
+  cursor:pointer;
+}
+li.selected{
+  background-color:#0f766e ;
+  color:white;
+}
+
+.mainContainer{
+  font-family: 'Nunito', sans-serif;
+  /* border:1px solid white; */
+  margin:20px auto;
+  padding:20px;
+  width:80%;
+  background-color: rgba(255, 255, 255, 0.062);
+  box-shadow: 0px 0px 5px rgb(29, 29, 29);
+  border-radius:10px;
+  
+}
+.header{
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  
+}
+.header p, h1{
+padding:10px;
+margin:0;
+}
+.header p{
+  color:#0f766e;
+}
+.inputFields label{
+  font-weight: bold;
+  color:#0f766e;
+  display: block;
+  cursor: pointer;
+}
+.inputFields input{
+  /* display: inline; */
+  width:90%;
+  padding:10px;
+  margin:5px;
+
+}
+.inputFields input::placeholder{
+  color:white;
+  text-align: center;
+}
+
+
+.inputFields input,button{
+  background-color: rgba(255, 255, 255, 0.089);
+  border:none;
+  outline:none;
+  color:white;
+  font-size:16px;
+  border-radius:10px;
+}
+button{
+  padding:10px 20px;
+  margin:20px;
+  border:1px solid #0f766e;
+  cursor: pointer;
+}
+.inputFields input:focus{
+  border:1px solid #0f766e;
+}
+button:focus,button:hover{
+  background-color: #0f766e;
+}
+
+.output{
+  /* border:1px solid white; */
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  margin:20px auto;
+}
+
+.formula{
+  color:#0f766e;
+  font-weight: bold;
+  background-color: white;
+  border-radius:10px;
+  padding:10px;
+  margin:5px;
+}
+
+.formula p{
+  margin:0;
+  padding:5px;
+}
+
+.triangleQuizFields {
+  color:white;
+}
+
+.triangleQuizFields .answer{
+  display: inline;
+}
+.triangleQuizFields label,.triangleQuizFields input{
+  display: inline;
+  padding:0;
+  margin:0;
+  width:20px;
+  cursor:pointer;
+}
