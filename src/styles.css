@@ -81,7 +81,6 @@ margin:0;
   cursor: pointer;
 }
 .inputFields input{
-  /* display: inline; */
   width:90%;
   padding:10px;
   margin:5px;
@@ -149,4 +148,14 @@ button:focus,button:hover{
   margin:0;
   width:20px;
   cursor:pointer;
+}
+.footer >p{
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+}
+.footer-icon{
+  width:30px;
+  height:30px;
+  margin:20px;
 }
