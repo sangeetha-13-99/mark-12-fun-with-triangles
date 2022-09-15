@@ -9,7 +9,7 @@ export default function Trianglearea(){
     let side2=Number(document.getElementById('side2').value);
     let side3=Number(document.getElementById('side3').value);
     let triangleAreaoutput=document.querySelector('.triangleAreaoutput');
-    if(side1+side2>side3 && side2+side3>side1 && side3+side1>side2){
+    if(side1>0 && side2>0 && side3>0 && side1+side2>side3 && side2+side3>side1 && side3+side1>side2){
       triangleAreaoutput.textContent='Area is ' + calculateTriangleArea(side1,side2,side3);
     }
     else

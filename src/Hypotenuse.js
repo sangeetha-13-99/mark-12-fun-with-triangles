@@ -3,7 +3,7 @@ export default function Hypotenuse(){
     let base=Number(document.getElementById('base').value);
     let height=Number(document.getElementById('height').value);
     let hypotenuseoutput=document.querySelector('.hypotenuseoutput');
-    if(!base || !height){
+    if(base<=0 || height<=0){
       hypotenuseoutput.textContent='enter valid values'
     }
     else{

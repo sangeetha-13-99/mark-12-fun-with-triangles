@@ -10,8 +10,8 @@ export default function Istriangle(){
     let angle3=document.getElementById('angle3');
     let output=document.querySelector('.isTriangleoutput');
     if(angle1.value && angle2.value && angle3.value){
-      if(angle1.value==0||angle2.value==0 || angle3.value==0){
-        output.textContent='enter values more than Zero to form traingle '
+      if(angle1.value<=0||angle2.value<=0 || angle3.value<=0){
+        output.textContent='enter values more than Zero to form triangle '
       }
       else{
         if (calculateIsTriangle(angle1.value,angle2.value,angle3.value)){
@@ -29,8 +29,8 @@ export default function Istriangle(){
  return (
    <div className="isTriangleContainer">
      <div className="header">
-      <h1 className="isTriangleHeading">IsTraingle?</h1>
-      <p className="isTrianglePara">Enter angles to check whether it forms traingle</p>
+      <h1 className="isTriangleHeading">IsTriangle?</h1>
+      <p className="isTrianglePara">Enter angles to check whether it forms triangle</p>
      </div>
      <div className="triangleFields">
       <div className="inputFields">
